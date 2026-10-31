@@ -6,7 +6,7 @@
 /*   By: abenabda <abenabda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 17:21:10 by abenabda          #+#    #+#             */
-/*   Updated: 2026/10/14 18:16:20 by abenabda         ###   ########.fr       */
+/*   Updated: 2026/10/28 14:14:51 by abenabda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*ptr;
 
 	if (nmemb == 0 || size == 0)
-		return (malloc(0));
+		return (malloc(1));
 	if (nmemb > SIZE_MAX / size)
 		return (NULL);
 	total_size = nmemb * size;

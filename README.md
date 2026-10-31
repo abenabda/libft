@@ -8,7 +8,7 @@ Libft is my first C library, built as part of the 42 curriculum. In this project
 
 The main objective was to better understand how these functions work internally while improving my skills in memory management, pointers, strings, and data structures.
 
-## What I implemented
+## Description
 
 ### Libc functions
 
@@ -50,7 +50,7 @@ For this part, I implemented a complete singly linked-list API using the `t_list
 - `ft_lstiter`
 - `ft_lstmap`
 
-## Building the library
+## Instructions
 
 I compile the library with the provided Makefile.
 

@@ -6,7 +6,7 @@
 /*   By: abenabda <abenabda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 18:30:20 by abenabda          #+#    #+#             */
-/*   Updated: 2026/10/15 18:33:58 by abenabda         ###   ########.fr       */
+/*   Updated: 2026/10/28 15:08:30 by abenabda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s)
 	{
 		write(fd, &(*s), 1);

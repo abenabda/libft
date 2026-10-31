@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abenabda <abenabda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/13 21:05:12 by abenabda          #+#    #+#             */
-/*   Updated: 2026/10/19 20:12:10 by abenabda         ###   ########.fr       */
+/*   Created: 2026/10/13 21:20:57 by abenabda          #+#    #+#             */
+/*   Updated: 2026/10/28 15:33:04 by abenabda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	while (*s)
+	int	i;
+
+	i = ft_strlen(s);
+	while (i >= 0)
 	{
-		if (*s == c)
-			return ((char *)s);
-		s++;
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
+		i--;
 	}
-	if (*s == ((char)c))
-		return ((char *)s);
 	return (NULL);
 }
